@@ -25,7 +25,6 @@ public class StockMarketTest {
         assertTrue(systemOut().contains("product: A product\nstate: Stinks"));
         //when
         stockMarket.updateMarket("A product","Stonks");
-        stockMarket.notifyObservers();
         //then
         assertTrue(systemOut().contains("I invested in A product!!!!"));
     }
@@ -41,7 +40,6 @@ public class StockMarketTest {
         assertTrue(systemOut().contains("product: A product\nstate: Stinks"));
         //when
         stockMarket.updateMarket("B product","Stinks");
-        stockMarket.notifyObservers();
         //then
         assertTrue(systemOut().contains("I will not invest!!!!"));
     }
