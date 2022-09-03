@@ -14,6 +14,6 @@ public class Broker implements Observer {
         if(currentStockMarket.state.equals("Stonks"))
             System.out.println("I invested in "+currentStockMarket.product+"!!!!");
         else
-            System.out.println("miss me with that stinks");
+            System.out.println("I will not invest!!!!");
     }
 }

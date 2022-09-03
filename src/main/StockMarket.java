@@ -11,7 +11,7 @@ public class StockMarket extends Observable {
     }
     public void outputAppState(){
         System.out.println("product: "+product+"\n"+
-                "state"+state
+                "state: "+state
         );
     }
 
